@@ -36,7 +36,6 @@ model.eval()
 
 bot_name = "Sam"
 st.write(f"{bot_name}: Let's Chat! Type 'quit' to exit")
-i = 0
 
 
 
@@ -68,20 +67,19 @@ def chatbot(sentence):
     
 
 
-def talk(i):
-    for i in range(i, i+1):
-
-        sentence = st.text_input("You: ", key = i)
+def talk():
+    
+    sentence = st.text_input("You: ", key = 1)
         
-        if st.button('Submit'):
+    if st.button('Submit'):
             
-            if sentence == "quit":
-                st.write(f"{bot_name}: Goodbye, feel free to ask any questions")
-            else:
-                chatbot(sentence)
+        if sentence == "quit":
+            st.write(f"{bot_name}: Goodbye, feel free to ask any questions")
+        else:
+            chatbot(sentence)
              
     
-talk(i)
+talk()
 
 
         
