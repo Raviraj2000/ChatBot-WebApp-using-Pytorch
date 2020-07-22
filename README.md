@@ -1,5 +1,4 @@
-# ChatBot-with-GUI-using-pytorch
-
+# ChatBot-WebApp-using-Pytorch
 This is a simple Chatbot made using Natural Language Processing, pytorch deep learning library and frontend library Streamlit.
 
 This chatbot is reprogramable. All you have to do is add tags and responses in intents.json file and retrain the model.
